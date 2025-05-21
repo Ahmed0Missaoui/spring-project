@@ -30,22 +30,25 @@ A full-stack car rental management application built with:
 ## 📁 Project Structure
 
 car-rental-system/
-├── backend/ (Spring Boot)
-│ ├── src/main/java/com/voiture/system/
-│ │ ├── controller/ # REST Controllers (Client, Voiture, Reservation)
-│ │ ├── model/ # Entities: Client, Voiture, Reservation
-│ │ ├── repository/ # Spring Data JPA Repositories
-│ │ ├── service/ # Business logic services
-│ │ └── VoitureLocationApplication.java
-│ └── resources/
-│ └── application.properties
-├── frontend/ (Next.js)
-│ ├── app/
-│ │ └── dashboard/voitures/ # Voiture pages (list, add, edit)
-│ ├── components/ # UI components
-│ ├── lib/ # Utilities (e.g., formatters)
-│ └── api/backendApi.ts # API call abstraction to backend
-└── README.md
+├── backend/                  # Spring Boot backend application
+│   ├── src/main/java/com/voiture/system/
+│   │   ├── controller/       # REST Controllers: Client, Voiture, Reservation
+│   │   ├── model/            # Entity classes: Client, Voiture, Reservation
+│   │   ├── repository/       # Spring Data JPA repositories
+│   │   ├── service/          # Business logic layer
+│   │   └── VoitureLocationApplication.java  # Main class
+│   └── resources/
+│       └── application.properties           # Backend configuration
+│
+├── frontend/                 # Frontend application using Next.js
+│   ├── app/
+│   │   └── dashboard/voitures/              # Voiture pages (list, add, edit)
+│   ├── components/          # Reusable UI components
+│   ├── lib/                 # Utility functions (e.g., formatters)
+│   └── api/backendApi.ts    # API abstraction layer for backend calls
+│
+└── README.md                # Project documentation
+
 
 
 
